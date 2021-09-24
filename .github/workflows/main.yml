@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 env:
-  REGISTRY_NAME: beaverdemo
+  REGISTRY_NAME: kishoreca8w7evr
   CLUSTER_NAME: mykubernetes
   CLUSTER_RESOURCE_GROUP: mycloudbeaver
   NAMESPACE: default
