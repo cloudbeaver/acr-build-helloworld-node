@@ -69,8 +69,8 @@ jobs:
       with:
         manifests: |
           aksdeploy.yaml
-        #images: |
-          #${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.APP_NAME }}
+        images: |
+          ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.APP_NAME }}:$GITHUB_RUN_ID
         imagepullsecrets: |
-          #${{ env.SECRET }}
+          ${{ env.SECRET }}
         namespace: ${{ env.NAMESPACE }}
